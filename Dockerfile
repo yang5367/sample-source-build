@@ -1,4 +1,4 @@
-ARG ${DEV}
+ARG DEV=regi.acloud.run/docker.io
 
 FROM ${DEV}/library/openjdk:11.0.15
 
