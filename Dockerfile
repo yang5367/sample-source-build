@@ -1,4 +1,4 @@
-ARG DEV= $DEV
+ARG DEV=$DEV
 
 FROM $DEV/library/openjdk:11.0.15
 
