@@ -1,7 +1,5 @@
-ARG DEV=regi.acloud.run/docker.io
-
 FROM ${DEV}/library/openjdk:11.0.15
 
-COPY repo/target/demo-0.0.1-SNAPSHOT.jar demo.jar
+COPY /target/demo-0.0.1-SNAPSHOT.jar demo.jar
 
 ENTRYPOINT ["java", "-jar", "demo.jar"]
