@@ -1,5 +1,5 @@
 FROM ${DEV}/library/openjdk:11.0.15
 
-COPY build/target/demo-0.0.1-SNAPSHOT.jar demo.jar
+COPY repo/target/demo-0.0.1-SNAPSHOT.jar demo.jar
 
 ENTRYPOINT ["java", "-jar", "demo.jar"]
