@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-         pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+         pageEncoding="EUC-KR"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,8 +7,8 @@
     <title>Example</title>
 </head>
 <body>
-<h1 class="text_h1">글자를 클릭하면 초록색으로 변경</h1>
-<h4 class="text_h2">글자를 클릭하면 주황색으로 변경</h4>
+<h1 class="text_h1">글자를 클릭하면 빨간색으로 변경</h1>
+<h4 class="text_h2">글자를 클릭하면 파란색으로 변경</h4>
 
 <h3>배경색과 글자색 변경</h3>
 <input type="button" value="Black" onclick="
@@ -27,12 +27,12 @@
 <script>
     var text_h1 = document.querySelector('.text_h1');
     text_h1.onclick = function () {
-        text_h1.style.color = 'green';
+        text_h1.style.color = 'red';
     };
 
     var text_h2 = document.querySelector('.text_h2');
     text_h2.onclick = function () {
-        text_h2.style.color = 'orange';
+        text_h2.style.color = 'blue';
     };
 </script>
 </html>
