@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-         pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+         pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,18 +7,18 @@
     <title>Example</title>
 </head>
 <body>
-<h1 class="text_h1">±ÛÀÚ¸¦ Å¬¸¯ÇÏ¸é »¡°£»öÀ¸·Î º¯°æ</h1>
-<h4 class="text_h2">±ÛÀÚ¸¦ Å¬¸¯ÇÏ¸é ÆÄ¶õ»öÀ¸·Î º¯°æ</h4>
+<h1 class="text_h1">ê¸€ìë¥¼ í´ë¦­í•˜ë©´ ì´ˆë¡ìƒ‰ìœ¼ë¡œ ë³€ê²½</h1>
+<h4 class="text_h2">ê¸€ìë¥¼ í´ë¦­í•˜ë©´ ì£¼í™©ìƒ‰ìœ¼ë¡œ ë³€ê²½</h4>
 
-<h3>¹è°æ»ö°ú ±ÛÀÚ»ö º¯°æ</h3>
+<h3>ë°°ê²½ìƒ‰ê³¼ ê¸€ììƒ‰ ë³€ê²½</h3>
 <input type="button" value="Black" onclick="
-    alert('¾îµÎ¿î È­¸éÀ¸·Î º¯ÇÕ´Ï´Ù.');
+    alert('ì–´ë‘ìš´ í™”ë©´ìœ¼ë¡œ ë³€í•©ë‹ˆë‹¤.');
     document.querySelector('body').style.backgroundColor='black';
     document.querySelector('body').style.color='white';
     ">
 
 <input type="button" value="White" onclick="
-    alert('¹àÀº È­¸éÀ¸·Î º¯ÇÕ´Ï´Ù.');
+    alert('ë°ì€ í™”ë©´ìœ¼ë¡œ ë³€í•©ë‹ˆë‹¤.');
     document.querySelector('body').style.backgroundColor='white';
     document.querySelector('body').style.color='black';
     ">
@@ -27,12 +27,12 @@
 <script>
     var text_h1 = document.querySelector('.text_h1');
     text_h1.onclick = function () {
-        text_h1.style.color = 'red';
+        text_h1.style.color = 'green';
     };
 
     var text_h2 = document.querySelector('.text_h2');
     text_h2.onclick = function () {
-        text_h2.style.color = 'blue';
+        text_h2.style.color = 'orange';
     };
 </script>
 </html>
