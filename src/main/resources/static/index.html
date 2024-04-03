@@ -1,11 +1,11 @@
-<html>
+ <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Example</title>
 </head>
 <body>
-<h1 class="text_h1">글자를 클릭하면 빨간색으로 변경</h1>
-<h2 class="text_h2">글자를 클릭하면 파란색으로 변경</h2>
+<h1 class="text_h1">글자를 클릭하면 초록색으로 변경</h1>
+<h2 class="text_h2">글자를 클릭하면 주황색으로 변경</h2>
 
 <h3>배경색과 글자색 변경</h3>
 <input type="button" value="Black" onclick="
@@ -28,27 +28,27 @@
 <script>
     var text_h1 = document.querySelector('.text_h1');
     text_h1.onclick = function () {
-        if (text_h1.style.color == 'red') {
+        if (text_h1.style.color == 'green') {
             if (document.querySelector('body').style.backgroundColor == 'black') {
                 text_h1.style.color = 'white';
             } else {
                 text_h1.style.color = 'black';
             }
         } else {
-            text_h1.style.color = 'red';
+            text_h1.style.color = 'green';
         }
     };
 
     var text_h2 = document.querySelector('.text_h2');
     text_h2.onclick = function () {
-        if (text_h2.style.color == 'blue') {
+        if (text_h2.style.color == 'orange') {
             if (document.querySelector('body').style.backgroundColor == 'black') {
                 text_h2.style.color = 'white';
             } else {
                 text_h2.style.color = 'black';
             }
         } else {
-            text_h2.style.color = 'blue';
+            text_h2.style.color = 'orange';
         }
     };
 
